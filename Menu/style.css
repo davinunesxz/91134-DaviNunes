@@ -1,0 +1,51 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+nav{
+
+    background-color: rgb(9, 107, 0);
+    margin: 20px;
+}
+
+ul li{
+
+    color: aliceblue;
+    list-style: none;
+
+}
+
+div{
+
+    background-color: rgb(9, 107, 0);
+    width: 80px;
+
+
+}
+
+.d1{
+
+    background-color: rgb(192, 179, 0);
+    display: inline;
+
+}
+
+.d2{
+
+    background-color: rgb(165, 0, 77);
+    display: inline;
+
+
+}
+
+.d3{
+
+    background-color: rgb(9, 107, 0);
+    display: inline;
+
+
+}

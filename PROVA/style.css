@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    text-align: center;
+}
+.navbar {
+    background: #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.navbar .menu {
+    margin-right: 20px;
+}
+.navbar .menu a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+.navbar .menu a:hover {
+    color: blue;
+}
+.hero {
+    padding: 50px;
+    background: white;
+}
+.hero h1 {
+    font-size: 28px;
+}
+.hero p {
+    margin: 10px 0 20px;
+}
+.hero button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+.hero button:hover {
+    background: darkblue;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background: #f1f1f1;
+}
+.feature {
+    background: #aab4f9;
+    padding: 20px;
+    width: 300px;
+    
+    transition: background 0.3s ease-in-out;
+}
+.feature:hover {
+    background: #7b83e2;
+}
+.feature h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}

@@ -63,7 +63,6 @@ body {
     background: #aab4f9;
     padding: 20px;
     width: 300px;
-    
     transition: background 0.3s ease-in-out;
 }
 .feature:hover {

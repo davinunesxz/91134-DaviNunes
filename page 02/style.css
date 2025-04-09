@@ -1,0 +1,110 @@
+
+/* reset basico: remove margens e preenchimento padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos gerais de corpos da pagina*/
+body {
+    font-family: Arial, sans-serif; /*define a fonte*/
+    line-height: 1.5; /*define a altura da linha*/
+}
+
+/*estilo do cabeçalho e menu*/
+header {
+    background-color: #333; /*fundo escuro*/
+    padding: 10px 0; /*espacamento vertical*/
+}
+
+/*remove os marcadores da lista e centraliza os itens*/
+nav ul{
+    list-style: none; /* remove pontos da lista */
+    display: flex; /*coloca OS itens em linha*/
+    justify-content: center; /*centraliza os itens*/
+}
+
+/*estilo de cada item do menu*/
+nav ul li{
+    position: relative; /*necessario para dropdown*/
+    margin: 0 10px; /*espaçamento entre os itens*/
+}
+
+/*estilo dos links do menu*/
+nav ul li a{
+    color: white; /*cor do texto*/
+    text-decoration: none;/*remove o sublinhado*/
+    padding: 10px;/*espaçamento interno*/
+    display: block;/*ocupa toda area do link*/
+}
+
+/*cor de fundo ao passar o mouse nos links*/
+nav ul li a:hover{
+    background-color: #444; /*fundo escuro ao passar o mouse*/
+    border-radius: 5px; /*bordas arredondadas*/
+}
+
+/*estilo do dropdown (sub-menu)*/
+.dropdown-content{
+    display: none;/*esconde o dropdown por padrão*/
+    position: absolute;/*posiciona o dropdown*/
+    background-color: #444;/*fundo do dropdown*/
+    top: 100%;/*alinha abixo do item pai*/
+    left: 0;/*alinha a esquerda do item pai*/
+    min-width: 150px;/*largura minima do dropdown*/
+    z-index: 1;/*garante que o dropdown apareca sobre o conteudo*/
+}
+
+/*estilo dos itens do dropdown*/
+.dropdown-content li{
+    margin: 0; /*remove magens extras*/
+}
+
+/*estilo dos links dentro do dropdown*/
+.dropdown-content li a {
+    padding: 10px;/*espacamento interno*/
+    color: white;/*cor do texto*/
+    text-align: left;/*alinha o texto a esquerda*/
+}
+
+/*cor de fundo ao passar o mouse nos links do dropdown*/
+.dropdown-content li a:hover{
+    background-color: #555; /*fundo ao passar o mouse*/
+}
+
+/*mostra o dropdown ao passar o mouse sobre o item pai*/
+.dropdown:hover .dropdown-content{
+    display: block; /*exibe o dropdown*/
+}
+
+/*estilo da area principal do conteudo*/
+main{
+    padding: 20px;/*tamanho da fonte do titulo*/
+    text-align: center;/*centraliza o texto*/
+}
+
+/*estilo do titulo principal*/
+main h1{
+    font-size: 36px; /*tamanho da fonte do titulo*/
+    margin-bottom: 20px; /*espaçamento abaixo do titulo*/
+}
+
+/*estilo da imagem*/
+main img{
+    max-width: 100%; /*a imagem naO ultrapassa a largura da tela*/
+    height: auto; /*mantem a proporção da imagem*/
+    margin-top: 20px; /*espacamento acima das imagens*/
+}
+
+/*estilo do rodapé*/
+footer{
+    background-color: #333;/*fundo escuro*/
+    color: white;/*cor do texto*/
+    text-align: center;/*centraliza o texto*/
+    padding: 10px 0;/*espacamento vertical*/
+    position: fixed;/*fixa o rodape no final da pagina*/
+    bottom: 0;/*alinha o rodape no final da pagina*/
+    width: 100%;/*o rodape ocupa 100% da largura da tela*/
+    height: 10%;
+}

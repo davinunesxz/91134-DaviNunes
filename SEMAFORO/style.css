@@ -1,0 +1,40 @@
+body {
+    background: #ffffff; /* Fundo escuro */
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa altura total da tela */
+  }
+
+  /* Caixa do semáforo */
+  .semaforo {
+    width: 100px; /* Largura do semáforo */
+    height: 300px; /* Altura do semáforo */
+    background: #333; /* Cor de fundo do semáforo */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+    display: flex; /* Layout flex */
+    flex-direction: column; /* Em coluna */
+    justify-content: space-between; /* Espaço entre as luzes */
+  }
+
+  /* Estilo base das luzes */
+  .luz {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Redonda */
+    margin: 0 auto; /* Centraliza */
+  }
+
+  /* Cada luz com sua cor acesa */
+  .luz-vermelha {
+    background: red;
+  }
+
+  .luz-amarela {
+    background: yellow;
+  }
+
+  .luz-verde {
+    background: lime;
+  }
